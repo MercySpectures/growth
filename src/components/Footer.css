@@ -1,0 +1,92 @@
+.footer {
+  padding: 3rem 1rem;
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  border-radius: 32px 32px 0 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.footer .footer-top {
+  margin-bottom: 2rem;
+}
+.footer .footer-top .footer-logo {
+  width: 60px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.footer .footer-top h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.footer .footer-top p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer .footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: white;
+  border-radius: 50px;
+  padding: 0.8rem 1rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.footer .footer-social .social-btn {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1254901961);
+  border-radius: 50px;
+  background: transparent;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .footer-social .social-btn.active {
+  background-color: #fff;
+  color: #000;
+}
+.footer .footer-bottom {
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .footer .footer-top h2 {
+    font-size: 2.2rem;
+  }
+  .footer .footer-top p {
+    font-size: 1.1rem;
+  }
+  .footer .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+  .footer .footer-social .social-btn {
+    font-size: 0.5rem;
+  }
+  .footer .footer-bottom {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,160 @@
+.hero {
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 0 0px 50px 50px;
+}
+.hero .hero-content {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero-content h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.hero .hero-content h1 {
+  font-size: 18rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.hero .hero-content p {
+  margin-top: 1rem;
+  width: 500px;
+  font-size: 1rem;
+  text-align: center;
+  color: #d1d1d1;
+}
+.hero .hero-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.hero .hero-bottom .plant-card {
+  width: 40%;
+  display: flex;
+}
+.hero .hero-bottom .plant-card .plant-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  align-items: start;
+  max-width: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.hero .hero-bottom .plant-card .plant-info h3 {
+  font-size: 2rem;
+}
+.hero .hero-bottom .plant-card .plant-info p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #d1d1d1;
+}
+.hero .hero-bottom .plant-card .plant-images {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  align-items: start;
+  max-width: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: calc(1rem + 10px);
+}
+.hero .hero-bottom .plant-card .plant-images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #fff;
+  margin-top: -10px;
+}
+.hero .hero-bottom .plant-card-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.hero .hero-bottom .plant-card-btn .down-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: all 0.3s;
+}
+.hero .hero-bottom .plant-card-btn .down-icon:hover {
+  background-color: rgba(255, 255, 255, 0.062745098);
+}
+.hero .hero-bottom .plant-card-btn .down-icon.active {
+  background-color: white;
+  color: black;
+}
+.hero .hero-bottom .plant-card-btn .shop-btn {
+  padding: 0.8rem 1.6rem;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background-color: white;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero .hero-bottom .plant-card-btn .shop-btn:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero-content {
+    height: 50vh;
+  }
+  .hero .hero-content h1 {
+    font-size: 6rem;
+  }
+  .hero .hero-content p {
+    width: 90%;
+    padding-top: 1.2rem;
+  }
+  .hero .hero-bottom {
+    flex-direction: column;
+  }
+  .hero .hero-bottom .plant-card {
+    width: 100%;
+    align-items: center;
+  }
+  .hero .hero-bottom .plant-card .plant-info, .hero .hero-bottom .plant-card .plant-images {
+    margin-bottom: 1rem;
+  }
+  .hero .hero-bottom .plant-card .plant-info h3 {
+    font-size: 1.8rem;
+  }
+  .hero .hero-bottom .plant-card .plant-info p {
+    font-size: 1rem;
+  }
+  .hero .hero-bottom .plant-card-btn {
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem 0 1rem 0;
+  }
+}/*# sourceMappingURL=Hero.css.map */

@@ -1,0 +1,187 @@
+.hero {
+  background-image: url("../assets/hero.jpg"); // use your background image
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 0 0px 50px 50px;
+
+  .hero-content {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 18rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1rem;
+      width: 500px;
+      font-size: 1rem;
+      text-align: center;
+      color: #d1d1d1;
+    }
+  }
+
+  .hero-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .plant-card {
+      width: 40%;
+      display: flex;
+
+      .plant-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.07);
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        align-items: start;
+        max-width: 350px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin: 0;
+          color: #d1d1d1;
+        }
+      }
+
+      .plant-images {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.07);
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        align-items: start;
+        max-width: 350px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: calc(1rem + 10px);
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid #fff;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    .plant-card-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+
+      .down-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #ffffff10;
+        }
+
+        &.active {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      .shop-btn {
+        padding: 0.8rem 1.6rem;
+        border: 2px solid #fff;
+        border-radius: 999px;
+        background-color: white;
+        color: #000;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero{
+    .hero-content{
+      height: 50vh;
+      h1{
+        font-size: 6rem;
+      }
+      p{
+        width: 90%;
+        padding-top: 1.2rem;
+      }
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+
+    .plant-card {
+      width: 100%;
+      align-items: center;
+
+      .plant-info, .plant-images {
+        margin-bottom: 1rem;
+      }
+
+      .plant-info{
+        h3{
+          font-size: 1.8rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .plant-card-btn {
+      width: 100%;
+      align-items: center;
+      flex-direction: row;
+      margin: 2rem 0 1rem 0;
+    }
+  }
+  }
+}

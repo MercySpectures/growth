@@ -1,0 +1,140 @@
+.new-plants-section {
+  background-color: #f3f3f3;
+  padding: 3rem 2rem;
+}
+.new-plants-section .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.new-plants-section .top h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #111;
+  letter-spacing: -5px;
+}
+.new-plants-section .top p {
+  max-width: 550px;
+  font-size: 0.95rem;
+  color: #555;
+}
+.new-plants-section .plants-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+.new-plants-section .plants-container .plant-card {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: hidden;
+  width: 32%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.new-plants-section .plants-container .plant-card:hover {
+  transform: translateY(-6px);
+}
+.new-plants-section .plants-container .plant-card .plant-img {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.new-plants-section .plants-container .plant-card .plant-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.new-plants-section .plants-container .plant-card .plant-img .dot-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new-plants-section .plants-container .plant-card .plant-info {
+  padding: 1rem;
+}
+.new-plants-section .plants-container .plant-card .plant-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+.new-plants-section .plants-container .plant-card .plant-info .desc {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+.new-plants-section .plants-container .plant-card .plant-info .price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new-plants-section .plants-container .plant-card .plant-info .price-row .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.new-plants-section .plants-container .plant-card .plant-info .price-row .arrow-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #111;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.new-plants-section .plants-container .plant-card .plant-info .price-row .arrow-btn:hover {
+  background-color: #333;
+}
+.new-plants-section .pagination-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+.new-plants-section .pagination-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.new-plants-section .pagination-dots .dot.active {
+  background-color: #111;
+}
+
+@media screen and (max-width: 768px) {
+  .new-plants-section .top h2 {
+    font-size: 4rem;
+    letter-spacing: -2pxpx;
+  }
+  .new-plants-section .top p {
+    font-size: 1.2rem;
+  }
+  .new-plants-section .plants-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-plants-section .plants-container .plant-card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=NewPlants.css.map */

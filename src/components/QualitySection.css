@@ -1,0 +1,76 @@
+.quality-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.quality-section h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.quality-section .subtitle {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+.quality-section .video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.quality-section .video-wrapper img {
+  width: 100%;
+  display: block;
+}
+.quality-section .video-wrapper .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.quality-section .video-wrapper .play-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .quality-section {
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+  .quality-section h2 {
+    font-size: 3rem;
+  }
+  .quality-section .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .quality-section .video-wrapper {
+    max-width: 100%;
+  }
+  .quality-section .video-wrapper img {
+    height: auto;
+  }
+}/*# sourceMappingURL=QualitySection.css.map */
