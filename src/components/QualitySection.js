@@ -1,15 +1,13 @@
 import React from 'react';
 import './QualitySection.scss';
-import videoThumbnail from '../assets/plant01.jpg'; // replace with your image
+import videoThumbnail from '../assets/travel02.jpg'; // replace with your image
 
 const QualitySection = () => {
   return (
     <section className="quality-section">
-      <h2>Quality Plants & Curated Goods</h2>
+      <h2>Curated Journeys & Authentic Experience</h2>
       <p className="subtitle">
-        We offer a carefully curated selection of indoor and outdoor plants, hand crafted home goods that put
-        quality ahead of quantity, and living art made right here in the shop: terrariums, landscapes,
-        arrangements, vessels, and holders.
+        We offer a thoughtfully curated selection of travel experiences—from serene nature escapes to vibrant cultural immersions. Our handcrafted itineraries prioritize quality over quantity, featuring locally guided tours, boutique stays, and immersive activities. Whether it's a scenic trek, a culinary adventure, or a heritage walk, each journey is designed to be a living story—crafted with care, rooted in authenticity.
       </p>
 
       <div className="video-wrapper">

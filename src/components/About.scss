@@ -1,0 +1,388 @@
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/travel01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 0 0px 50px 50px;
+
+  .about-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+  }
+}
+
+.about-content {
+
+  .ourStory {
+    max-height: 500px;
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    gap: 2rem;
+
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+
+      h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+      }
+    }
+
+    img {
+      width: 50%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+  }
+
+  .ourMission {
+    width: 100%;
+    padding: 4rem;
+    background-color: #fff;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 50px 50px 0 0;
+
+    .top {
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+
+        h2 {
+          width: 50%;
+          font-size: 4rem;
+          font-weight: 700;
+          margin-bottom: 2rem;
+          text-align: end;
+        }
+
+        p {
+          width: 50%;
+          font-size: 1.2rem;
+          line-height: 1.8;
+          margin-bottom: 2rem;
+        }
+      
+    }
+
+    .mission-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+
+      .mission-point {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          transform: translateY(-2px);
+          background: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        img {
+          width: 100%;
+          height: 500px;
+          display: block;
+          margin-bottom: 1.5rem;
+          border-radius: 10px;
+
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 0.6rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin: 0;
+          color: #555454;
+        }
+      }
+    }
+  }
+
+  .whyChooseUs{
+    width: 100%;
+    padding: 4rem;
+    background-color: #fff;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 0 0 50px 50px;
+
+    h2{
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+  
+      .feature {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2rem;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+  
+        &:hover {
+          transform: translateY(-5px);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+          border-color: rgb(0, 0, 0);
+        }
+  
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 1.1rem;
+          opacity: 0.9;
+          margin-bottom: 1rem;
+        }
+
+        img{
+          width: 100%;
+          height: 250px;
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+
+  
+  .team{
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 0 0 50px 50px;
+
+    .top{
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 2rem;
+
+      h2 {
+        width: 50%;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      p {
+        width: 50%;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .team-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+  
+      .stat {
+        text-align: center;
+        padding: 3rem 2rem;
+        background: linear-gradient(135deg, rgba(139, 156, 180, 0.1), rgba(255, 255, 255, 0.05));
+        border-radius: 20px;
+        border: 1px solid rgba(92, 92, 92, 0.1);
+        transition: all 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-5px);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+          border: 1px solid #000;
+        }
+  
+        h3 {
+          font-size: 4rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          background: linear-gradient(45deg, #000000, #e3e3e3);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+  
+        p {
+          font-size: 1.3rem;
+          opacity: 0.9;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+}
+
+// Responsive design
+@media screen and (max-width: 768px) {
+  .about-hero {
+    height: 50vh;
+
+    .about-hero-content {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .about-content {
+    padding: 2rem 0rem;
+
+    .ourStory {
+      padding: 2rem;
+      height: 100%;
+      flex-direction: column;
+      max-height: 100%;
+
+      .left{
+        width: 100%;
+      }
+
+      img{
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+    }
+
+    .ourMission{
+      padding: 2rem;
+      .top{
+        flex-direction: column;
+
+        h2{
+          font-size: 3rem;
+          width: 100%;
+        }
+
+        p{
+          width: 100%;
+        }
+      }
+
+      .mission-points {
+        grid-template-columns: 1fr;
+
+        .mission-point img{
+          height: 400px;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+    .whyChooseUs{
+
+      padding: 2rem;
+
+      h2{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        
+      }
+      
+    }
+
+    .team{
+      padding: 2rem;
+
+      .top{
+        flex-direction: column;
+
+        h2, p{
+          width: 100%;
+        }
+      }
+      .team-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        .stat {
+          padding: 1.5rem;
+
+          h3 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+      
+  }
+}

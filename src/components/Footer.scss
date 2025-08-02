@@ -13,9 +13,8 @@
 
     .footer-logo {
       width: 60px;
-      margin-bottom: 1rem;
       padding: 0.5rem;
-
+      object-fit: cover;
       background-color: transparent;
       border-radius: 50px;
       backdrop-filter: blur(20px);
@@ -29,8 +28,8 @@
 
     p {
       font-size: 1.2rem;
-      color: #ccc;
-      max-width: 600px;
+      color: #fff;
+      max-width: 800px;
       margin: 0 auto;
     }
   }
@@ -70,6 +69,10 @@
   .footer-bottom {
     font-size: 0.9rem;
     color: #eee;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
 

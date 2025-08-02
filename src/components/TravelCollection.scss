@@ -1,0 +1,163 @@
+.travel-collection {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+
+  .headerTravel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .subtext {
+      width: 30%;
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 6rem;
+      font-weight: bold;
+      color: #111;
+      letter-spacing: -5px;
+    }
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .row {
+      display: flex;
+      gap: 1.5rem;
+
+      &.row-top {
+        .card.large {
+          flex: 2;
+        }
+
+        .card:not(.large) {
+          flex: 1;
+        }
+      }
+
+      &.row-bottom {
+        .card {
+          flex: 1;
+        }
+      }
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      height: 300px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay {
+        width: 80%;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        padding: 1.2rem;
+        color: white;
+        z-index: 2;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.6rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        backdrop-filter: blur(5px);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+        &.dark {
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        }
+
+        &.light {
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 0.85rem;
+          margin-top: 0.4rem;
+          color: #ddd;
+        }
+      }
+
+      .arrow-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .travel-collection {
+    .headerTravel {
+      flex-direction: column;
+      align-items: start;
+      margin-top: 1rem;
+
+      h2 {
+        font-size: 4rem;
+        letter-spacing: -2px;
+        line-height: 1;
+      }
+
+      .subtext {
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .grid-container .row {
+      flex-direction: column;
+    }
+    .grid-container .row.row-top .card.large {
+      flex: unset;
+    }
+
+    .grid-container .row.row-bottom .card {
+      flex: unset;
+      height: 500px;
+    }
+
+    .grid-container .card {
+      flex: unset;
+    }
+  }
+} 

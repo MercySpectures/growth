@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.scss';
-import logo from '../assets/plant.png'; // optional decorative logo
+import logo from '../assets/logo.png'; // optional decorative logo
 
 const socialLinks = ['Instagram', 'Twitter', 'LinkedIn', 'Telegram', 'Pinterest'];
 
@@ -11,10 +11,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <img src={logo} alt="logo" className="footer-logo" />
-        <h2>Join the community!</h2>
+        <h2>Join the Journey!</h2>
         <p>
-          Subscribe to The Forager to receive monthly plant tips,
-          store updates, promotions & more
+          Subscribe to The Explorer's Post for monthly travel inspiration, destination highlights, exclusive offers, and insider tips to make your next adventure unforgettable. Would you like a version that feels more adventurous, luxurious, or family-friendly? I can tailor it to match your brand vibe.
+
         </p>
       </div>
 

@@ -1,114 +1,115 @@
 import React, { useState } from "react";
 import "./CategorySection.scss";
 
-import petImg from "../assets/plant01.jpg";
-import orchidImg from "../assets/plant02.jpg";
-import succulentImg from "../assets/plant03.jpg";
+import travelImg01 from "../assets/travel01.jpg";
+import travelImg02 from "../assets/travel02.jpg";
+import travelImg03 from "../assets/travel03.jpg";
 
 const categories = [
-  "Outdoor Plant",
-  "Indoor Plant",
-  "Flower Pot",
-  "Potted Plant",
+  "Outdoor Adventures",
+  "City Escapes",
+  "Travel Gear",
+  "Luxury Escapes",
 ];
 
 const allCards = {
-  "Outdoor Plant": [
+  "Outdoor Adventures": [
     {
-      title: "Pet Friendly Plants",
+      title: "Pet-Friendly Trips",
       description:
-        "These houseplants are ideal for homes with pets and kids. They are completely non-toxic and safe, while adding greenery and beauty to your indoor environment. They are also easy to care for and thrive in different lighting conditions.",
-      image: petImg,
-      tag: "Peperomia",
+        "These travel packages are ideal for families with pets and kids. They feature non-restrictive accommodations and safe outdoor activities, while offering plenty of scenic beauty and relaxation.",
+      image: travelImg01,
+      tag: "👨‍👩‍👧‍👦 Family Travel",
     },
     {
-      title: "Orchids",
+      title: "Mountain Treks",
       description:
-        "Orchids are a popular choice for those seeking elegant, long-lasting blooms. These delicate flowers are easy to maintain with proper care and add a touch of sophistication to any space. Great for gifting or home decor.",
-      image: orchidImg,
-      tag: "Araceae",
+        "Perfect for adventure seekers, these treks take you through breathtaking landscapes and rugged trails. Great for hiking enthusiasts and nature lovers looking to disconnect.",
+      image: travelImg02,
+      tag: "🥾 Hiking",
     },
     {
-      title: "Succulents",
+      title: "Desert Safaris",
       description:
-        "Succulents are drought-tolerant, low-maintenance plants that come in many shapes and colors. They are perfect for busy lifestyles and small spaces. Place them near windows for the best growth and style your shelves with ease.",
-      image: succulentImg,
-      tag: "Monocots",
-    },
-  ],
-  "Indoor Plant": [
-    {
-      title: "Fiddle Leaf Fig",
-      description:
-        "Known for its large, sculptural leaves, this plant adds a modern vibe to interiors. It thrives in bright, indirect sunlight and prefers consistent watering. With the right care, it can become a statement piece in any room.",
-      image: orchidImg,
-      tag: "Ficus lyrata",
-    },
-    {
-      title: "ZZ Plant",
-      description:
-        "This nearly indestructible plant is ideal for low-light spaces and requires minimal watering. Its glossy green leaves add a fresh touch to offices or homes. It’s perfect for beginners or forgetful plant parents.",
-      image: succulentImg,
-      tag: "Zamioculcas",
-    },
-    {
-      title: "Pothos",
-      description:
-        "Pothos is a fast-growing, trailing plant that purifies air and thrives in various light conditions. It is extremely easy to propagate and perfect for hanging baskets. A top choice for both new and seasoned plant lovers.",
-      image: petImg,
-      tag: "Epipremnum",
+        "Explore vast dunes, ride camels, and camp under the stars. These low-maintenance adventures offer high-impact beauty and unforgettable cultural experiences.",
+      image: travelImg03,
+      tag: "🌵 Desert",
     },
   ],
-  "Flower Pot": [
+  "City Escapes": [
     {
-      title: "Terracotta Pot",
+      title: "Urban Retreats",
       description:
-        "Terracotta pots are made from clay, providing excellent drainage for plant roots. Their earthy color complements green foliage beautifully. Ideal for succulents, herbs, and other water-sensitive plants indoors or out.",
-      image: petImg,
-      tag: "Clay Pot",
+        "Modern stays in bustling cities with access to museums, cafes, and nightlife. Ideal for travelers who love culture, convenience, and curated experiences.",
+      image: travelImg01,
+      tag: "🏙️ City Life",
     },
     {
-      title: "Self-Watering Pot",
+      title: "Weekend Getaways",
       description:
-        "These pots include a reservoir that supplies water to your plant over time. Perfect for those who travel or forget to water often. They help reduce root rot and maintain consistent moisture levels.",
-      image: orchidImg,
-      tag: "Smart Pot",
+        "Quick escapes to charming towns or nearby cities. Perfect for busy professionals or spontaneous travelers looking to recharge.",
+      image: travelImg02,
+      tag: "🧳 Short Trips",
     },
     {
-      title: "Hanging Pot",
+      title: "Cultural Tours",
       description:
-        "Hanging pots are great space-savers and perfect for trailing or vining plants. Whether placed indoors near a window or outdoors on patios, they add vertical interest and aesthetic charm to any setting.",
-      image: succulentImg,
-      tag: "Macramé",
+        "Dive into local traditions, architecture, and cuisine. These guided tours offer immersive experiences in historic neighborhoods and cultural landmarks.",
+      image: travelImg03,
+      tag: "🏛️ Heritage",
     },
   ],
-  "Potted Plant": [
+  "Travel Gear": [
     {
-      title: "Snake Plant",
+      title: "Smart Luggage",
       description:
-        "This upright plant is a favorite due to its architectural shape and low-maintenance nature. It tolerates low light and infrequent watering. Plus, it’s known to purify air and improve indoor air quality.",
-      image: succulentImg,
-      tag: "Sansevieria",
+        "Trackable, durable, and designed for modern travelers. These suitcases offer built-in chargers, compartments, and sleek design for stress-free travel.",
+      image: travelImg01,
+      tag: "⚙️ Tech Gear",
     },
     {
-      title: "Peace Lily",
+      title: "Self-Cleaning Bottles",
       description:
-        "Peace Lilies are known for their elegant white blooms and air-purifying abilities. They thrive in shade and require minimal upkeep. These plants are a timeless addition to both home and office interiors.",
-      image: orchidImg,
-      tag: "Spathiphyllum",
+        "Perfect for long journeys, these bottles use UV technology to purify water and reduce waste. Stay hydrated wherever you go.",
+      image: travelImg02,
+      tag: "🌳 Eco Travel",
     },
     {
-      title: "Spider Plant",
+      title: "Hiking Backpacks",
       description:
-        "Spider plants are fast-growing and excellent for beginners. They produce “babies” or offshoots you can replant. Their arching leaves look striking in hanging baskets or on shelves, and they also purify the air.",
-      image: petImg,
-      tag: "Chlorophytum",
+        "Lightweight and ergonomic, these backpacks are built for outdoor adventures. With multiple compartments and weather-resistant materials, they’re ready for any terrain.",
+      image: travelImg03,
+      tag: "🎒 Adventure Gear",
+    },
+  ],
+  "Luxury Escapes": [
+    {
+      title: "Beach Resorts",
+      description:
+        "Relax in tropical paradise with ocean views, spa treatments, and gourmet dining. These resorts offer the ultimate in comfort and indulgence.",
+      image: travelImg01,
+      tag: "🦩 Tropical",
+    },
+    {
+      title: "Wellness Retreats",
+      description:
+        "Rejuvenate with yoga, meditation, and holistic therapies. These peaceful destinations are designed to restore balance and well-being.",
+      image: travelImg02,
+      tag: "😌 Mind & Body",
+    },
+    {
+      title: "Romantic Getaways",
+      description:
+        "Elegant escapes for couples—perfect for honeymoons, anniversaries, or spontaneous romance. Think candlelit dinners and scenic strolls.",
+      image: travelImg03,
+      tag: "🤗 Couples",
     },
   ],
 };
 
+
 const CategorySection = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Outdoor Plant");
+  const [selectedCategory, setSelectedCategory] = useState("Outdoor Adventures");
   const [expandedIndex, setExpandedIndex] = useState(0);
 
   const handleCardClick = (index) => {
@@ -162,7 +163,7 @@ const CategorySection = () => {
             </div>
             <div className="line"></div>
             <div className="card-footer">
-              <span className="tag">🌿 {card.tag}</span>
+              <span className="tag">{card.tag}</span>
             </div>
           </div>
         ))}

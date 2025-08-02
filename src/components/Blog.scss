@@ -1,0 +1,328 @@
+.blog-page {
+  min-height: 100vh;
+  
+}
+
+.blog-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/travel04.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 0 0px 50px 50px;
+
+  .blog-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+  }
+}
+
+.blog-section {
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 0 0 50px 50px;
+
+  .blog-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .blog-card {
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+
+      &:hover {
+        transform: translateY(-5px);
+        border: 1px solid #000;
+      }
+
+      .blog-image {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+
+        .blog-overlay {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+
+          .category {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+          }
+        }
+
+        &:hover img {
+          transform: scale(1.05);
+        }
+      }
+
+      .blog-content {
+        padding: 2rem;
+
+        .blog-meta {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          font-size: 0.9rem;
+
+          .read-time {
+            background: rgba(3, 3, 3, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+          }
+
+          .date {
+            color: #272727;
+          }
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin: 1rem 0;
+          line-height: 1.4;
+        }
+
+        p {
+          line-height: 1.7;
+          margin-bottom: 1.5rem;
+          font-size: 1rem;
+        }
+
+        .blog-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 2rem;
+
+          .author {
+            font-size: 0.9rem;
+            color: #2c2c2c;
+            font-style: italic;
+          }
+
+          .read-more-btn {
+            background-color: #000;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: #fff;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+              border-color: rgba(0, 0, 0, 0.5);
+              transform: translateY(-2px);
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.newsletter-section {
+  padding: 8rem 6rem;
+
+  .newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      line-height: 1.7;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+
+      input {
+        flex: 1;
+        padding: 1.2rem 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        font-size: 1rem;
+
+        &::placeholder {
+          color: #999;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: rgba(0, 0, 0, 0.5);
+          background: rgba(255, 255, 255, 0.15);
+        }
+      }
+
+      .subscribe-btn {
+        background: #000;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 1.2rem 2rem;
+        border-radius: 30px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+
+        &:hover {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+          border-color: rgba(0, 0, 0, 0.5);
+          transform: translateY(-2px);
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 768px) {
+  .blog-hero {
+    height: 60vh;
+
+    .blog-hero-content {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .blog-section {
+    padding: 2rem;
+
+    .blog-intro {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .blog-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      .blog-card {
+        .blog-content {
+          padding: 1.5rem;
+
+          h3 {
+            font-size: 1.3rem;
+          }
+
+          .blog-footer {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter-section {
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+    .newsletter-content {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+        gap: 1rem;
+
+        input, .subscribe-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

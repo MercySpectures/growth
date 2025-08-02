@@ -3,28 +3,28 @@ import './FAQ.scss';
 
 const faqItems = [
   {
-    q: "Ordering for Delivery?",
-    a: "We deliver plants and goods to your doorstep. Check our delivery area and schedule to ensure timely arrival and freshness.",
+    q: "How do I book a tour?",
+    a: "You can book directly through our website. Simply choose your destination, select dates, and follow the checkout process. A confirmation email will be sent once your booking is complete.",
   },
   {
-    q: "Potting Services",
-    a: "We offer potting in store or you can bring your own. Fees depend on the type of plant and materials used. Ask in store for more info.",
+    q: "Do you offer custom itineraries?",
+    a: "Yes! We specialize in personalized travel planning. Share your interests and preferences, and our team will craft a custom itinerary just for you.",
   },
   {
-    q: "Do we ship plants?",
-    a: "Yes, we ship select plants nationwide. Our packaging ensures safe transit. Refer to our shipping policy for specific regions.",
+    q: "Are flights included in the packages?",
+    a: "Some packages include flights, while others focus on ground experiences. Each listing clearly states what's included. Feel free to contact us for clarification.",
   },
   {
-    q: "Ordering for Pick up?",
-    a: "Order online and pick up from our store during open hours. You’ll receive a confirmation once your order is ready.",
+    q: "Can I travel with pets?",
+    a: "We offer select pet-friendly travel options. Look for the 'Pet-Friendly' tag on our packages or reach out to us for recommendations.",
   },
   {
-    q: "Do plants come with pots?",
-    a: "Some plants are sold with decorative pots, while others come in nursery containers. Options are clearly labeled on the product page.",
+    q: "What is your cancellation policy?",
+    a: "Our cancellation policy varies by package and provider. You’ll find detailed terms on each booking page. We also offer flexible options for select tours.",
   },
   {
-    q: "How do I care for my plant?",
-    a: "Each plant comes with a care card. You can also visit our website for detailed plant care tips based on the species you purchase.",
+    q: "Do you offer group discounts?",
+    a: "Yes, we provide special rates for group bookings. Whether you're planning a family trip, corporate retreat, or school tour, contact us for a custom quote.",
   },
 ];
 

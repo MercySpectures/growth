@@ -60,6 +60,17 @@
       min-height: 400px;
       overflow: hidden;
 
+      &::after{
+        position: absolute;
+        background-image: linear-gradient(#00000077, #ffffff23);
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+      }
+
       &.clicked {
         width: 40%;
       }
@@ -69,6 +80,7 @@
       }
 
       .card-content {
+        z-index: 10;
         h3 {
           font-size: 1.4rem;
           font-weight: 700;
@@ -100,6 +112,7 @@
       }
 
       .line{
+        z-index: 10;
         height: 0.5px;
         width: 100%;
         background-color: #fff;
@@ -110,6 +123,7 @@
       }
 
       .card-footer {
+        z-index: 10;
         display: flex;
         align-items: center;
         gap: 0.5rem;
